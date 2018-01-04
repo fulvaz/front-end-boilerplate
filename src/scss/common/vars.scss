@@ -1,0 +1,12 @@
+$default-font-size: 14px;
+$default-font-color: #5c6b77;
+$default-desc-font-size: 12px;
+$default-border-color: #EFEFEF;
+$default-input-border-color: rgb(217, 217, 217);
+
+$invalid-color: rgb(240, 65, 52);
+
+
+// 移动端适配
+$design-width: 1080px;
+$rem: ($design-width / 3);

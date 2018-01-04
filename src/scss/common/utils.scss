@@ -1,0 +1,42 @@
+@import './vars.scss';
+
+@mixin centerContent1() {
+    .centered-container {
+        position: relative;
+        top: 50%;
+        .centered-content {
+            position: absolute;
+            top: -50%;
+        }
+    }
+}
+
+@mixin fullScreen() {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+@mixin fullViewport() {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+}
+
+@mixin bgDiv($w, $h) {
+    width: $w;
+    height: $h;
+    background-position: center;
+    background-size: cover;
+}
+
+// 这个函数需要配合js使用, 原理是根据百分比定位
+@function px2rem($px) {
+    @return ($px / $rem) + rem;
+}
